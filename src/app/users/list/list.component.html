@@ -1,0 +1,12 @@
+<div class="container" *ngIf="loadingFlag">
+  <h3 class="center text-center"><i class="fa fa-sync fa-spin fa-2x"></i> Loading</h3>
+</div>
+<div class="card-columns">
+  <div *ngFor="let user of userElement" class="card">
+    <img class="card-img-top" [src]="user.avatar" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ user.id }}. {{ user.first_name+' '+user.last_name }}</h5>
+      <p class="card-text">{{ user.avatar }}</p>
+    </div>
+  </div>
+</div>

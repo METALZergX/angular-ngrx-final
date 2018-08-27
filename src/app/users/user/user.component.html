@@ -1,0 +1,11 @@
+<div *ngIf="selectedUser" class="container">
+  <div class="row">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" [src]="selectedUser.avatar" [alt]="selectedUser.first_name">
+      <div class="card-body">
+        <h5 class="card-title">{{ selectedUser.first_name+' '+selectedUser.last_name }}</h5>
+        <p class="card-text">{{ selectedUser.avatar }}</p>
+      </div>
+    </div>
+  </div>
+</div>
